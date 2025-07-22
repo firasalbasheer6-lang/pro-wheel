@@ -1,3 +1,21 @@
+.gallery {
+  padding: 40px;
+  background-color: #e6f0ff;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.gallery-grid img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
 
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
@@ -118,3 +136,14 @@
   </footer>
 </body>
 </html>
+<section class="gallery">
+  <h2 style="text-align: center; margin-bottom: 30px;">كتالوج العجلات</h2>
+  <div class="gallery-grid">
+    <img src="https://via.placeholder.com/300x200?text=Wheel+1" alt="عجلة 1">
+    <img src="https://via.placeholder.com/300x200?text=Wheel+2" alt="عجلة 2">
+    <img src="https://via.placeholder.com/300x200?text=Wheel+3" alt="عجلة 3">
+    <img src="https://via.placeholder.com/300x200?text=Wheel+4" alt="عجلة 4">
+    <img src="https://via.placeholder.com/300x200?text=Wheel+5" alt="عجلة 5">
+    <img src="https://via.placeholder.com/300x200?text=Wheel+6" alt="عجلة 6">
+  </div>
+</section>
